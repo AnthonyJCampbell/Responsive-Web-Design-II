@@ -117,7 +117,7 @@ header nav a:hover {
 
 
 .herobutton, .button {
-	padding: 5px 42px 5px 42px;
+	padding: 5px 15% 5px 15%;
 	border: 1px solid black;
 	text-decoration: none;
 	color: black;
@@ -129,8 +129,6 @@ header nav a:hover {
 	text-decoration: underline;
 }
 
-
-
 .upper {
 	display: flex;
 	flex-wrap: wrap;
@@ -141,14 +139,14 @@ header nav a:hover {
 	width: 100%;
 }
 .upper-section {
-	padding: 10px 10px 40px 0;
+	padding: 10px 0 40px 0;
 	text-align: left;
 	width: 50%;
 }
 
 
 .lower {
-	margin: 0 0 20px 0;
+	margin-bottom: 20px;
 	padding-bottom: 45px;
 	border-bottom: 1px solid black;
 	display: flex;
@@ -157,7 +155,7 @@ header nav a:hover {
 }
 
 .lower-section {
-    padding: 20px 20px 20px 0;
+    padding: 20px 2% 20px 0;
 	width: 33%;
 	text-align: left;
 	border-bottom: none;
@@ -233,13 +231,13 @@ footer {
     }
 
     .logo {
-        padding: 25px;
+        padding: 5% auto;
     }
 
     header nav a {
         width: 100%;
         text-align: center;
-        padding: 25px;
+        padding: 25px 0;
         border: 1px solid #e3e3e3;
     }
     .heroImage {
