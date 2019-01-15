@@ -197,7 +197,6 @@ p, p a{
 
 
 footer {
-	margin-top: 50px;
 	text-align: center;
 	text-decoration: underline;
 	font-weight: 500;
@@ -208,7 +207,7 @@ footer {
 /* TABLET */
 @media(max-width: 800px) {
     .container {
-        width: 85%;
+        width: 90%;
     }
     header {
         width: 100%;
@@ -223,14 +222,27 @@ footer {
         margin-top: 25px;
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+    }
+    .herocontent {
+        justify-content: center;
+        padding-bottom: 45px;
+        margin: 70px 0 24px 5px;
     }
     .heroImage {
         display: none;
+        
     }
     .herotext {
-        width: 100%;
+        margin: 0;
+        padding: 0 auto;
     }
+    
+    .upper {
+        
+        margin-bottom: 0px;
+    }
+
 }
 
 
@@ -261,13 +273,52 @@ footer {
         padding: 25px 0;
         border: 1px solid #e3e3e3;
     }
+
+    .herotext {
+        margin: 0;
+    }
+
     .heroImage {
         display: none;
     }
-    .herotext {
-        width: 80%;
+    
+    .upper-section, .lower-section, address {
+        width: 90%;
+        margin: 0 auto;
     }
-    .upper-section, .lower-section {
-        width: 100%;
+}
+
+
+
+.container, div {
+    border: 1px solid red;
+}
+
+.cardholder{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    width: 50%;
+}
+
+
+@media(max-width: 800px) {
+    .intro {
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+    .introText {
+        order: -1
+    }
+    .bot {
+        flex-wrap: nowrap;
+    }
+}
+
+@media(max-width: 500px) {
+    .card {
+        width: 90%;
+        margin: 0 auto;
     }
 }
