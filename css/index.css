@@ -63,11 +63,12 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-	font-size: 5rem;
+    font-size: 7rem;
+    line-height: 74px;
 }
 
 h2 {
-	font-size: 1.3rem;
+	font-size: 1.6rem;
 }
 
 
@@ -77,6 +78,7 @@ html {
 }
 
 .container {
+    font-weight: bold;
 	background: white;
 	max-width: 880px;
 	margin: 0 auto;
@@ -87,13 +89,15 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 30px;
+    margin-top: 32px;
+    font-size: 1.6rem;
 }
 
 header nav {
 	width: 68.6%;
 	display: flex;
-	justify-content: space-between;
+    justify-content: space-between;
+    font-weight: bold;
 }
 
 header nav a {
@@ -107,16 +111,30 @@ header nav a:hover {
 
 .herocontent {
 	display: flex;
-    align-items: center;
-    justify-content:space-evenly;
+    justify-content:flex-end;
 	text-align: center;
-    border-bottom: 1px solid black;
-    padding: 80px 0;
-    margin-bottom: 30px;
+    border-bottom: 2px solid black;
+    padding-bottom: 72px;
+    margin: 70px 0 30px 5px;
+}
+
+.herotext {
+    
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 10% 0 0;
+}
+
+.herotext h1 {
+    letter-spacing: 2px;
+    font-weight: normal;
 }
 
 
 .herobutton, .button {
+    font-size: 1.8em;
 	padding: 5px 15% 5px 15%;
 	border: 1px solid black;
 	text-decoration: none;
@@ -138,6 +156,12 @@ header nav a:hover {
 .middle-img {
 	width: 100%;
 }
+
+p, p a{
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+}
+
 .upper-section {
 	padding: 10px 0 40px 0;
 	text-align: left;
@@ -146,9 +170,9 @@ header nav a:hover {
 
 
 .lower {
-	margin-bottom: 20px;
-	padding-bottom: 45px;
-	border-bottom: 1px solid black;
+	margin-bottom: 35px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid black;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
@@ -166,9 +190,6 @@ header nav a:hover {
 	padding-right: 0;
 }
 
-address {
-	text-align: center;
-}
 
 .phone {
 	margin: 10px 0;
