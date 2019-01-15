@@ -359,12 +359,14 @@ footer {
 
 @media(max-width: 800px) {
     .intro {
+        margin-top: 25px;
         flex-wrap: nowrap;
         text-align: center;
         flex-direction: column-reverse;
     }
 
     .introImg {
+        padding-top: 25px;
         margin: 0 auto;
        
     }
@@ -376,13 +378,14 @@ footer {
         flex-wrap: wrap;
     }
     .bot .botImg {
-        width: 100%;
+        width: 60%;
         display: flex;
+        margin: 0 auto;
         justify-content: center;
     }
     .bot .botText {
-        width: 80%;
-        margin: 0 auto;
+        width: 60%;
+        margin: 20px auto;
         text-align: center;
     }
     
