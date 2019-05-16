@@ -1,1 +1,399 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* RESETS AND GENERAL STYLING */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 7rem;
+    line-height: 74px;
+}
+
+h2 {
+	font-size: 1.6rem;
+}
+
+
+/* DESKTOP-FIRST */
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    font-weight: bold;
+	background: white;
+	max-width: 880px;
+	margin: 0 auto;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    margin-top: 32px;
+    font-size: 1.6rem;
+}
+
+header nav {
+	width: 68.6%;
+	display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+header nav a {
+	text-decoration: none;
+	color: #999;
+}
+
+header nav a:hover {
+	color: #555;
+}
+
+.herocontent {
+	display: flex;
+    justify-content:flex-end;
+	text-align: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 72px;
+    margin: 70px 0 30px 5px;
+}
+
+.herotext {
+    
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 10% 0 0;
+}
+
+.herotext h1 {
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+
+.herobutton, .button {
+    font-size: 1.8em;
+	padding: 5px 15% 5px 15%;
+	border: 1px solid black;
+	text-decoration: none;
+	color: black;
+	background-color: #fefefe;
+}
+
+.herobutton:hover, .button {
+	background-color: #fff;
+	text-decoration: underline;
+}
+
+.upper {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+.middle-img {
+	width: 100%;
+}
+
+p, p a{
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+}
+
+.upper-section {
+	padding: 10px 0 40px 0;
+	text-align: left;
+	width: 50%;
+}
+
+
+.lower {
+	margin-bottom: 35px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.lower-section {
+    padding: 20px 2% 20px 0;
+	width: 33%;
+	text-align: left;
+	border-bottom: none;
+}
+
+
+.lower-section:last-child {
+	padding-right: 0;
+}
+
+
+.phone {
+	margin: 10px 0;
+}
+
+
+footer {
+	text-align: center;
+	text-decoration: underline;
+	font-weight: 500;
+	padding: 25px 0 100px 0;
+}
+
+
+/* TABLET */
+@media(max-width: 800px) {
+    .container {
+        width: 90%;
+    }
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    header nav {
+        order: 1;
+        margin-top: 25px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .herocontent {
+        justify-content: center;
+        padding-bottom: 45px;
+        margin: 70px 0 24px 5px;
+    }
+    .heroImage {
+        display: none;
+        
+    }
+    .herotext {
+        margin: 0;
+        padding: 0 auto;
+    }
+    
+    .upper {
+        
+        margin-bottom: 0px;
+    }
+
+}
+
+
+
+
+/* MOBILE */
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+    header {
+        flex-direction: column;
+    }
+    header nav {
+        order: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        padding: 5% auto;
+    }
+
+    header nav a {
+        width: 100%;
+        text-align: center;
+        padding: 25px 0;
+        border: 1px solid #e3e3e3;
+    }
+
+    .herotext {
+        margin: 0;
+    }
+
+    .heroImage {
+        display: none;
+    }
+    
+    .upper-section, .lower-section, address {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    border-bottom: 2px solid black;
+}
+
+.introImg {
+    margin: 16px auto 30px auto;
+    width: 100%;
+}
+
+.introImg img {
+    width: 100%;
+}
+
+
+.introText h1 {
+    font-size: 2.5rem;
+    line-height: 1;
+
+}
+
+.cardholder{
+    padding: 28px 0 20px 0;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.card {
+    width: 47.5%;
+    margin: 2.5% 0;
+    border: 1px solid black;
+    background: #eee;
+    padding: 20px 15px 35px 15px;
+}
+
+.card p {
+    padding-bottom: 60px;
+}
+
+.card a {
+    margin-bottom: 50px;
+    padding: 10px 15%;
+    border: 1px solid black;
+    background: white;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+
+
+.bot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.bot div {
+    width: 47.5%;
+}
+
+.botImg img{
+    width: 100%;
+}
+
+
+@media(max-width: 800px) {
+    .intro {
+        margin-top: 25px;
+        flex-wrap: nowrap;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+
+    .introImg {
+        padding-top: 25px;
+        margin: 0 auto;
+       
+    }
+    .introImg img {
+        width: 100%;
+    }
+    
+    .bot {
+        flex-wrap: wrap;
+    }
+    .bot .botImg {
+        width: 60%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .bot .botText {
+        width: 60%;
+        margin: 20px auto;
+        text-align: center;
+    }
+    
+}
+
+@media(max-width: 500px) {
+    .card {
+        width: 90%;
+        margin: 2.5% auto;
+    }
+}
